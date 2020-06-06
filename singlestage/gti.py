@@ -6,13 +6,13 @@ import math as mth
 # === INPUTS:
 # N_r:                         Number of connected real devices
 # N_max:                       Maximum number of connected honeypots and real devices (this number can be limited
-#                                    either due to available public IPs or due to limited computational resources)
-# bias_plug_out_real_device:   (Optional) A boolean that indicates if a bias should be activates that makes impossible for the
-#                                    GTI engine to suggest the plugging out of a real device
-# max_tries                    (Optional) How many times should GTI try with random a and d in order to find Nash equilibrium
+#                                  either due to available public IPs or due to limited computational resources)
+# bias_plug_out_real_device:   (Optional) A boolean that indicates if a bias should be activates that makes impossible
+#                                  for the GTI engine to suggest the plugging out of a real device
+# max_tries               (Optional) How many times should GTI try with random a and d in order to find Nash equilibrium
 # a, d                         (Optional) Determine specific values for a, d
 # attacker_known               (Optional) Boolean value to indicate if the attacker (thus the a values) should be
-#                                    considered as known by the GTI engine
+#                                  considered as known by the GTI engine
 # === OUTPUT:
 # n*theta                      Number of honeypots (rounded to accomplish the best possible utility)
 # real_devices_to_disconnect   (Optional) Number of real devices that should be disconnected
